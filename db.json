@@ -1,0 +1,72 @@
+{
+    "Clothing": [
+        {
+            "id": 1,
+            "Delivery": "Store Collection",
+            "Cost": "FREE",
+            "Details": "It's free to collect in store. Available collection dates and stores will be made clear to you at checkout.Orders can be collected from 12pm on your chosen day. Stores will hold for 7 days"
+        },
+        {
+            "id": 2,
+            "Delivery": "Standard Delivery",
+            "Cost": "$3.50 / FREE",
+            "Details": "We'll deliver for free if your order is over £50 (exclusions apply), within 3-5 working days. We'll aim to deliver earlier if possible. If you're not spending £50 then delivery is £3.50. To find out if this delivery option is available to your postcode, click here. You can view your order and access any tracking details in My Account."
+        },
+        {
+            "id": 3,
+            "Delivery": "Nominated/next day delivery",
+            "Cost": "$4.99",
+            "Details": "Choose a day that suits you. Order by 10pm and we'll deliver your order tomorrow for just £4.99. To find out if this delivery option is available to your postcode, click here. You can view your order and access any tracking details in My Account"
+        },
+        {
+            "id": 4,
+            "Delivery": "Time slot delivery",
+            "Cost": "$5.99",
+            "Details": "Time slot delivery is temporarily unavailable.Choose a day that suits you. Order by 10pm and we'll deliver your order tomorrow for just £4.99."
+        }
+    ],
+    "Flower": [
+        {
+            "id": 1,
+            "Delivery": "Nominated/next day delivery",
+            "Cost": "FREE",
+            "Details": "Order by 7pm weekdays or midday on weekends for next day delivery or choose a day that suits you. Sunday delivery on selected lines only. To find out if these delivery options are available to your postcode,>click here. You can view your order and access any tracking details in My Account"
+        }
+    ],
+    "Wine": [
+        {
+            "id": 1,
+            "Delivery": "Standard wine delivery",
+            "Cost": "$4.99 / FREE",
+            "Details": "We’ll deliver wine orders over £100 for free within 3-5 working days. Not spending £100? Delivery costs £4.99.  to find out more about how we calculate the minimum spend thresholds for orders containing wine. To find out if this delivery option is available to your postcode, click here. You can view your order and access any tracking details in My Account"
+        },
+        {
+            "id": 2,
+            "Delivery": "Nominated/next day delivery",
+            "Cost": "$6.99 / FREE",
+            "Details": "Get your order on a day that suits you, plus place an order by 7pm to get your wine delivered tomorrow. Free when you spend over £150. Click here.  to find out more about how we calculate the minimum spend thresholds for orders containing wine. To find out if this delivery option is available to your postcode, . You can view your order and access any tracking details in My Account."
+        }
+    ],
+    "Hamper": [
+        {
+            "id": 1,
+            "Delivery": "Standard delivery",
+            "Cost": "$3.50 / FREE",
+            "Details": "We’ll deliver for free within 3-5 working days if your order is over £50. If you’re not spending £50, then delivery is just £3.50. To find out if this delivery option is available to your postcode, delivery options in your area. . You can view your order and access any tracking details in My Account."
+        },
+        {
+            "id": 2,
+            "Delivery": "Nominated/next day delivery",
+            "Cost": "$4.99",
+            "Details": "Order hampers by 5pm Monday-Friday for next day delivery. Sunday delivery not available. To find out if this delivery option is available to your postcode, click here. . You can view your order and access any tracking details in My Account."
+        }
+    ],
+    "Furniture": [
+        {
+            "id": 1,
+            "Delivery": "Nominated/next day delivery",
+            "Cost": "FREE",
+            "Details": "Our furniture products have a note in the description to let you know the time it will take us to dispatch - this could be between one and six weeks, and will be longer for larger items. Once you’ve ordered, we’ll be in touch to make a plan for delivery - you can choose the delivery date and inform us of access requirements. There are some places in the UK that we can’t deliver to yet.See our list of exceptions here "
+        }
+    ]
+}
