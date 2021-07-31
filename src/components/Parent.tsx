@@ -25,12 +25,12 @@ const Parent: FC<IChildProps> = ({ items }) => {
     }
   });
 
-  const rotateSvg =()=> {
-    if(!isLoaded){
+  const rotateSvg = () => {
+    if (!isLoaded) {
       let img = document.getElementById(`${items?.id}`) as HTMLElement;
       img.style.transform = 'rotate(270deg)';
     }
-    else{
+    else {
       let img = document.getElementById(`${items?.id}`) as HTMLElement;
       img.style.transform = 'rotate(90deg)';
     }
@@ -39,24 +39,32 @@ const Parent: FC<IChildProps> = ({ items }) => {
   return (
     <div data-testid="p-1">
       <div className="container" data-testid="p-2" onClick={() => { setIsLoaded(!isLoaded); }}>
-        <div className="heading" onClick={() => {rotateSvg();}}>
-          <img src={Arrow} key={items?.id} id={items?.id.toString()} alt="arrow"/>{items?.name}
+        <div className="heading" onClick={() => { rotateSvg(); }}>
+          <img src={Arrow} key={items?.id} id={items?.id.toString()} alt="arrow" />{items?.name}
         </div>
         {
-          <div className="tick">
+          <div className="wrapper">
             {isLoaded ?
               <ul data-testid="p-3">
-                <span className="col1"><b>Delivery</b></span>
-                <span className="col1"><b>Cost</b></span>
-                <span className="col1"><b>Details</b></span>
-                {componentData.map(data => ( //<Child />
+                <table className="table">
+                  <thead className="row">
+                    <tr>
+                      <td><span><b>Delivery</b></span></td>
+                      <td><span><b>Cost</b></span></td>
+                      <td><span><b>Details</b></span></td>
+                    </tr>
+                  </thead>
+                  {componentData.map(data => (
 
-                  <li key={data.id.toString()} className="main">
-                    <span className="col2">{data.Delivery}</span>
-                    <span className="col2"><b>{data.Cost}</b></span>
-                    <span className="col2">{data.Details}</span>
-                  </li>
-                ))}
+                    <li key={data.id.toString()} className="main">
+                      <tbody>
+                        <td>{data.Delivery}</td>
+                        <td><b>{data.Cost}</b></td>
+                        <td>{data.Details}</td>
+                      </tbody>
+                    </li>
+                  ))}
+                </table>
               </ul> : null
             }
           </div>

@@ -1,50 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
 
 .container {
-  width: calc(100% - 25rem);
-  max-width: 70%;
+  width: calc(100% - 20rem);
+  max-width: 80%;
   cursor: pointer;
   text-align: left;
-  margin-left: 10rem;
+  margin-left: 8rem;
   font-family: "Raleway", sans-serif;
-}
-ul li:nth-child(odd) {
-  background: rgb(255, 255, 255) !important;
-}
-.main {
-  display: inline-flex;
-  background: #f0f0f0;
-}
-span.col2 {
-  float: left;
-  width: 33%;
-  height: auto;
-  padding-bottom: 1.5rem;
-  padding-top: 0.5rem;
-}
-span.col1 {
-  float: left;
-  background: #f0f0f0;
-  width: 33.333%;
-  height: auto;
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
-}
-span.del {
-  float: left;
-  background: #e9e7e7;
-  width: 30%;
-}
-span.cos {
-  float: left;
-  background: #e9e7e7;
-  width: 40%;
-}
-span.det {
-  float: right;
-  background: #e9e7e7;
-  width: 30%;
-  text-align: left;
 }
 .heading {
   padding: 12px;
@@ -60,36 +22,93 @@ span.det {
 .heading:hover {
   text-decoration: underline;
 }
+ul li:nth-child(odd) {
+  background: rgb(255, 255, 255) !important;
+}
+.main {
+  background: #f0f0f0;
+}
+.table td{
+  float: left;
+  width: 32%;
+  height: auto;
+  padding-bottom: 1.5rem;
+  padding-top: 0.5rem;
+}
+// span.col2 {
+//   float: left;
+//   width: 33%;
+//   height: auto;
+//   padding-bottom: 1.5rem;
+//   padding-top: 0.5rem;
+// }
+// span.col1 {
+//   float: left;
+//   background: #f0f0f0;
+//   width: 33.333%;
+//   height: auto;
+//   padding-bottom: 0.5rem;
+//   padding-top: 0.5rem;
+// }
+// span.del {
+//   float: left;
+//   background: #e9e7e7;
+//   width: 30%;
+// }
+// span.cos {
+//   float: left;
+//   background: #e9e7e7;
+//   width: 40%;
+// }
+// span.det {
+//   float: right;
+//   background: #e9e7e7;
+//   width: 30%;
+//   text-align: left;
+// }
 
-@media screen and (max-width: 968px) {
-  .container {
+
+// @media screen and (max-width: 968px) {
+//   .container {
+//     max-width: 80%;
+//     cursor: pointer;
+//     text-align: left;
+//     margin-left: 10rem;
+//     font-family: "Raleway", sans-serif;
+//   }
+//   .main {
+//     display: grid;
+//     align-items: stretch;
+//     margin-top: 20px;
+//   }
+  
+// }
+
+@media screen and(max-width: 768px) {
+  .container{
+    // width: 100%;
+    width: calc(100% - 5rem);
     max-width: 80%;
-    cursor: pointer;
-    text-align: left;
-    margin-left: 10rem;
-    font-family: "Raleway", sans-serif;
+    margin-left: 0;
+  }
+  .heading{
+    width: 100%;
+  }
+  .row{
+    float: left;
+    width: 32%;
   }
   .main {
-    display: grid;
+    // display: block;
     align-items: stretch;
     margin-top: 20px;
   }
-  span.col1 {
-    visibility: hidden;
-  }
-  span.col2 {
-    float: left;
+  .table td{
+    // float: left;
     width: 100%;
-    // height: auto;
+    margin-top: 10px;
+    height: auto;
     padding-bottom: 1.5rem;
     padding-top: 0.5rem;
-    overflow: hidden;
-  }
-}
-
-@media screen and(max-width: 480px) {
-  .container{
-    width: 100%;
-    margin-left: 2rem;
   }
 }

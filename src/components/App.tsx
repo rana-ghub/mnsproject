@@ -15,7 +15,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <div data-testid="p-1">
+      <div data-testid="p-3">
         <h1>UK Delivery and collection</h1>
         <h2> If you've ordered...</h2>
       </div>
