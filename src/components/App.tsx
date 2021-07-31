@@ -1,6 +1,6 @@
 import React from 'react';
 import Parent from './Parent';
-import './App.scss';
+import '../assets/scss/App.scss';
 
 
 const App = () => {
@@ -15,8 +15,10 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>UK Delivery and collection</h1>
-      <h2> If you've ordered...</h2>
+      <div data-testid="p-1">
+        <h1>UK Delivery and collection</h1>
+        <h2> If you've ordered...</h2>
+      </div>
       {
         items.map((item) => {
           return (<Parent items={item} />)

@@ -1,8 +1,8 @@
 
 import React, { useState, useEffect, FC } from 'react';
 import axios from 'axios';
-import './Parent.scss';
-import Arrow from './arrow.svg';
+import '../assets/scss/Parent.scss';
+import Arrow from '../assets/svg/arrow.svg';
 
 interface IChildProps {
   items?: { id: number, value: string; name: string };
@@ -25,7 +25,7 @@ const Parent: FC<IChildProps> = ({ items }) => {
     }
   });
 
-  const rotateImage =()=> {
+  const rotateSvg =()=> {
     if(!isLoaded){
       let img = document.getElementById(`${items?.id}`) as HTMLElement;
       img.style.transform = 'rotate(270deg)';
@@ -38,7 +38,10 @@ const Parent: FC<IChildProps> = ({ items }) => {
 
   return (
     <div data-testid="p-1">
-      <div className="container" onClick={() => { setIsLoaded(!isLoaded); }}><div className="heading" data-testid="p-2" onClick= {() => { rotateImage(); }}><img src={Arrow} key={items?.id} id={items?.id.toString()} alt="arrow"/>{items?.name}</div>
+      <div className="container" data-testid="p-2" onClick={() => { setIsLoaded(!isLoaded); }}>
+        <div className="heading" onClick={() => {rotateSvg();}}>
+          <img src={Arrow} key={items?.id} id={items?.id.toString()} alt="arrow"/>{items?.name}
+        </div>
         {
           <div className="tick">
             {isLoaded ?
@@ -49,9 +52,9 @@ const Parent: FC<IChildProps> = ({ items }) => {
                 {componentData.map(data => ( //<Child />
 
                   <li key={data.id.toString()} className="main">
-                    <span className="col2 col3">{data.Delivery}</span>
-                    <span className="col2 col3"><b>{data.Cost}</b></span>
-                    <span className="col2 col3">{data.Details}</span>
+                    <span className="col2">{data.Delivery}</span>
+                    <span className="col2"><b>{data.Cost}</b></span>
+                    <span className="col2">{data.Details}</span>
                   </li>
                 ))}
               </ul> : null

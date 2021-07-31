@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, cleanup, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import Parent from '../Parent';
+import Parent from '../components/Parent';
 
 afterEach(() => {
     cleanup();
