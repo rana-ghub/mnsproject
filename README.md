@@ -1,6 +1,6 @@
 # Getting Started with Create React App & TypeScript
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) & [TypeScript](https://www.typescriptlang.org/docs/handbook/react.html)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) & [TypeScript](https://www.typescriptlang.org/docs/handbook/react.html).
 
 ## Available Scripts
 
@@ -13,6 +13,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
+
+### `json-server --watch db.json --port 5000`
+
+Launches the dummy API created using `json-server`.\
+Open [http://localhost:5000](http://localhost:3000) to view this API created in another tab.
 
 ### `npm test`
 
