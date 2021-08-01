@@ -35,55 +35,37 @@ ul li:nth-child(odd) {
   padding-bottom: 1.5rem;
   padding-top: 0.5rem;
 }
-// span.col2 {
-//   float: left;
-//   width: 33%;
-//   height: auto;
-//   padding-bottom: 1.5rem;
-//   padding-top: 0.5rem;
-// }
-// span.col1 {
-//   float: left;
-//   background: #f0f0f0;
-//   width: 33.333%;
-//   height: auto;
-//   padding-bottom: 0.5rem;
-//   padding-top: 0.5rem;
-// }
-// span.del {
-//   float: left;
-//   background: #e9e7e7;
-//   width: 30%;
-// }
-// span.cos {
-//   float: left;
-//   background: #e9e7e7;
-//   width: 40%;
-// }
-// span.det {
-//   float: right;
-//   background: #e9e7e7;
-//   width: 30%;
-//   text-align: left;
-// }
-
-
-// @media screen and (max-width: 968px) {
-//   .container {
-//     max-width: 80%;
-//     cursor: pointer;
-//     text-align: left;
-//     margin-left: 10rem;
-//     font-family: "Raleway", sans-serif;
-//   }
-//   .main {
-//     display: grid;
-//     align-items: stretch;
-//     margin-top: 20px;
-//   }
-  
-// }
-
+span.col2 {
+  float: left;
+  width: 33%;
+  height: auto;
+  padding-bottom: 1.5rem;
+  padding-top: 0.5rem;
+}
+span.col1 {
+  float: left;
+  background: #f0f0f0;
+  width: 33.333%;
+  height: auto;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+span.del {
+  float: left;
+  background: #e9e7e7;
+  width: 30%;
+}
+span.cos {
+  float: left;
+  background: #e9e7e7;
+  width: 40%;
+}
+span.det {
+  float: right;
+  background: #e9e7e7;
+  width: 30%;
+  text-align: left;
+}
 @media screen and(max-width: 768px) {
   .container{
     // width: 100%;
@@ -99,12 +81,10 @@ ul li:nth-child(odd) {
     width: 32%;
   }
   .main {
-    // display: block;
     align-items: stretch;
     margin-top: 20px;
   }
   .table td{
-    // float: left;
     width: 100%;
     margin-top: 10px;
     height: auto;
